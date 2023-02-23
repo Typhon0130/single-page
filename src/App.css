@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+@import "~animate.css/animate.css";
+
+:root {
+  --light: #fff;
+  --success: #5fe953;
+  --primary: #4651f7;
+  --info: #95a4fc;
+  --danger: #e61111;
+  --warning: #d6d439;
+
+  --bg: #fff;
+  --bg1: #fff;
+
+  --btn-color: #aaffa3;
+  --btn-color1: #269338;
+
+  --color: #424442;
+
+  --border: none;
+  --font-family: "Articulat CF";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a {
+  color: #424442;
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.logo-img {
+  max-width: 360px !important;
+}
+
+/*
+Reset CSS
+*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+input,
+textarea {
+  outline: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+cite {
+  font-style: normal;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+
+.animate-img {
+  transform: translateX(150%);
+  animation: moveCar 5s ease-in infinite forwards;
+}
+
+@keyframes moveCar {
+  100% {
+    transform: translateX(calc(-100vw - 100%));
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animte-cloud {
+  transform: translateY(100%);
+  animation: movCloud 2s infinite alternate;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes movCloud {
+  0% {
+    transform: translateY(0.2rem);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateY(-0.2rem);
+  }
+}
+
+.animte-cloud1 {
+  transform: translateY(100%);
+  animation: movCloud1 2s infinite alternate;
+}
+
+@keyframes movCloud1 {
+  0% {
+    transform: translateY(-0.1rem);
+  }
+  100% {
+    transform: translateY(0.1rem);
+  }
+}
+
+.animte-cloud2 {
+  transform: translateY(100%);
+  animation: movCloud2 2s infinite alternate;
+}
+
+@keyframes movCloud2 {
+  0% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0.25rem);
+  }
+}
+
+.animte-cloud3 {
+  transform: translateY(100%);
+  animation: movCloud3 2s infinite alternate;
+}
+
+@keyframes movCloud3 {
+  0% {
+    transform: translateY(-0.35rem);
+  }
+  100% {
+    transform: translateY(0.35rem);
+  }
+}
+
+.animte-cloud4 {
+  transform: translateY(100%);
+  animation: movCloud4 2s infinite alternate;
+}
+
+@keyframes movCloud4 {
+  0% {
+    transform: translateY(0.4rem);
+  }
+  100% {
+    transform: translateY(-0.4rem);
   }
 }

@@ -7,6 +7,8 @@ export const H1Wrapper = styled.h1`
   line-height: 1.2;
   font-weight: revert;
   font-family: revert;
+  ${(props) => (props.fontSize ? `font-size:${props.fontSize}` : "")};
+  ${(props) => (props.letterSpacing ? `letter-spacing:${props.letterSpacing}` : "")};
 `;
 
 export const H2Wrapper = styled.h2`

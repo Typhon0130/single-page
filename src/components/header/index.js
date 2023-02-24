@@ -17,10 +17,10 @@ function Header() {
       <Container>
         <Row vertical="center" horizontal="space-between">
           <Img src={Logo} className="logo-img" />
-          <Nav className="nav">
+          <Nav className="nav" paddingLeft="30rem">
             <Ul>
               <Li className = "nav-li">
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/home">Home</NavLink>
               </Li>
               <Li className = "nav-li">
                 <NavLink to="/">DRIVECLASS</NavLink>

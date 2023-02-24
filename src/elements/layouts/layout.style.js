@@ -6,11 +6,19 @@ export const StyledLayout = styled.section``;
 export const StyledRow = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   ${(props) => (props.vertical ? `align-items:${props.vertical}` : "")};
   ${(props) => (props.horizontal ? `justify-content:${props.horizontal}` : "")};
 `;
 
 export const StyledColumn = styled.div`
+  ${(props) => (props.display ? `display:${props.display}` : "")};
+  ${(props) => (props.justifyContent ? `justify-content:${props.justifyContent}` : "")};
+  align-items: center;
+  ${(props) => (props.width ? `width:${props.width}` : "")};
+  ${(props) => (props.height ? `height:${props.height}` : "")};
+  ${(props) => (props.border ? `border:${props.border}` : "")};
+  ${(props) => (props.borderRadius ? `border-radius:${props.borderRadius}` : "")};
 `;
 
 export const StyledContainer = styled.div`

@@ -11,7 +11,7 @@ export const styledLink = styled.a`
 `;
 
 export const StyledNav = styled.nav`
-  padding-left: 30rem;
+  ${(props) => (props.paddingLeft ? `padding-left:${props.paddingLeft}` : "")};
   list-style: none;
 `;
 
@@ -20,6 +20,7 @@ export const StyledUl = styled.ul`
   font-family: revert;
   list-style: none;
   padding-right: 2rem;
+  ${(props) => (props.color ? `color:${props.color}` : "")};
 `;
 
 export const StyledLi = styled.li`

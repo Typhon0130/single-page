@@ -8,6 +8,7 @@ import Card from "asset/img/card.png";
 import Car from "asset/img/car.png";
 import Backage from "asset/img/backage.png";
 import Road from "asset/img/road.png";
+import Rect1 from 'asset/img/Rect1.png'
 
 const Images = {
   Logo: Logo,
@@ -20,6 +21,7 @@ const Images = {
   Card: Card,
   Backage: Backage,
   Road: Road,
+  Rect1:Rect1,
 };
 
 export default Images;

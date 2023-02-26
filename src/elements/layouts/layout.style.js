@@ -8,6 +8,7 @@ export const StyledRow = styled.div`
   flex-direction: row;
   align-items: center;
   ${(props) => (props.vertical ? `align-items:${props.vertical}` : "")};
+  ${(props) => (props.textAlign ? `text-align:${props.textAlign}` : "")};
   ${(props) => (props.horizontal ? `justify-content:${props.horizontal}` : "")};
 `;
 
@@ -23,33 +24,35 @@ export const StyledColumn = styled.div`
 
 export const StyledContainer = styled.div`
   margin: auto;
-  text-align: center;
-  @media ${devices.mobileS} {
-    max-width: 280px;
-  }
+  // text-align: center;
+  // @media ${devices.mobileS} {
+  //   max-width: 280px;
+  // }
 
-  @media ${devices.mobileM} {
-    max-width: 335px;
-  }
+  // @media ${devices.mobileM} {
+  //   max-width: 335px;
+  // }
 
-  @media ${devices.mobileL} {
-    max-width: 385px;
-  }
+  // @media ${devices.mobileL} {
+  //   max-width: 385px;
+  // }
 
-  @media ${devices.tablet} {
-    max-width: 728px;
-  }
+  // @media ${devices.tablet} {
+  //   max-width: 728px;
+  // }
 
-  @media ${devices.laptop} {
-    max-width: 984px;
-  }
+  // @media ${devices.laptop} {
+  //   max-width: 984px;
+  // }
 
-  @media ${devices.laptopL} {
-    max-width: 1024px;
-  }
+  // @media ${devices.laptopL} {
+  //   max-width: 1024px;
+  // }
 
-  @media ${devices.desktop} {
-    max-width: 1620px;
-  }
+  // @media ${devices.desktop} {
+  //   max-width: 1620px;
+  // }
+  padding: 0 2.5vw 0 2.5vw;
+  ${(props) => (props.padding ? `padding:${props.padding}` : "")};
   flex: 1;
 `;

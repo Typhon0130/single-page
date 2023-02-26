@@ -1,0 +1,66 @@
+.license-page {
+  background: no-repeat url("asset/img/Rect1.png");
+  width: 100vw;
+  height: auto;
+  background-position: -8vw -8vh;
+  background-size: 100% 100%;
+}
+.license-page>.container {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-group {
+  padding-top: 25vh;
+  float: right;
+}
+.row:first-child {
+    padding-left: 2.5vw;
+}
+
+.card {
+  width: 20vw;
+  height: 25vw;
+  border-radius: 30px;
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  transition: all 0.5s;
+  box-shadow: 0 14px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-element-1 {
+}
+
+.card-element-2 {
+  margin-top: -15vw;
+  margin-left: 7vw;
+}
+
+.license-title {
+  text-align: start;
+  font-size: 3.5vw;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 1.5;
+  text-transform: uppercase;
+  color: #ffffffc9;
+}
+.license-paragraph {
+    text-align: start;
+    font-size: 24px;
+    color: #ffffffc9;
+}
+
+/* .container > .column {
+  flex: 0.5;
+} */
+
+.frist-column {
+    flex: 0 0 50%;
+}
+.second-column {
+    flex: 0 0 55%;
+}

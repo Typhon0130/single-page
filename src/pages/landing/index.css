@@ -1,0 +1,16 @@
+
+.container {
+  color: #ffffffc9;
+  padding: 70px 8vw 70px 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  /* 1366px 768px 411px */
+}
+
+@media screen and (min-width: 1920px) {
+  
+}

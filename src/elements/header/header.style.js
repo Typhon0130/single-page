@@ -9,6 +9,7 @@ export const H1Wrapper = styled.h1`
   font-family: revert;
   ${(props) => (props.fontSize ? `font-size:${props.fontSize}` : "")};
   ${(props) => (props.letterSpacing ? `letter-spacing:${props.letterSpacing}` : "")};
+  ${(props) => (props.color ? `color:${props.color}` : "")};
 `;
 
 export const H2Wrapper = styled.h2`

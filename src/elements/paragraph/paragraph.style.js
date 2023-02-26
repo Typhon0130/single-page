@@ -9,4 +9,7 @@ export default styled.p`
   font-size: 1.2em;
   color: #333;
   line-height: 1.15;
+  ${(props) => (props.fontSize ? `font-size:${props.fontSize}` : "")};
+  ${(props) => (props.letterSpacing ? `letter-spacing:${props.letterSpacing}` : "")};
+  ${(props) => (props.color ? `color:${props.color}` : "")};
 `;
